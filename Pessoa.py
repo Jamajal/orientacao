@@ -1,18 +1,19 @@
 class Pessoa:
-    "Isto é uma nova classe pessoa"
-
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-
+    "Isto é uma nova classe chamada Pessoa"
+    
+    idade = 15
+    
     def saudacao(self):
-        print('Olá Mundo!')
+        print("Olá Pessoas!!!")
+    
+print(Pessoa.idade)
+print(Pessoa.saudacao)
 
-    def dizer_idade(self):
-        print(f'Eu tenho {self.idade} anos!')
+objetoPessoa = Pessoa()
 
-leandro = Pessoa('Leandro', 24)
-leandro.dizer_idade()
+objetoPessoa.saudacao()
+print(objetoPessoa.idade)
+print(objetoPessoa.saudacao)
 
-pedro = Pessoa('Pedro', 20)
-pedro.dizer_idade()
+print(Pessoa.__doc__)
+        
